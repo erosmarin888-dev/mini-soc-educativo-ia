@@ -12,7 +12,7 @@ The project provides an interactive SOC dashboard, simulated security telemetry,
 > **Important:** This project uses fictional and simulated cybersecurity data. It does not monitor a real network, connect to production systems, or replace a SIEM.
 
 ## project view
-
+https://erosmarin888-dev.github.io/mini-soc-educativo-ia/
 ## Project Objectives
 
 The Mini SOC was created to demonstrate practical understanding of:
