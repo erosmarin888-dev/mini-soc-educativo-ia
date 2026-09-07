@@ -1,0 +1,14 @@
+{
+  "name": "mini-soc-educativo-ia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Laboratorio SOC L1 educativo, 100% local, con datos e IA simulados.",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "generate:data": "python3 tools/generate-data.py",
+    "test": "node tests/validate-data.js"
+  },
+  "keywords": ["soc", "cybersecurity", "education", "siem", "incident-response", "kql"],
+  "license": "MIT",
+  "engines": {"node": ">=18"}
+}

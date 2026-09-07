@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mini SOC educativo con escenarios, datos e IA 100% simulados. Funciona sin conexión y sin dependencias.">
+  <meta name="theme-color" content="#123047">
+  <title>Mini SOC Educativo con IA</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="simulation-ribbon" role="note">
+    <strong>SIMULACIÓN EDUCATIVA</strong>
+    <span>Datos 100% ficticios · Sin conexión a sistemas reales · La “IA” funciona localmente con reglas</span>
+  </div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">MS</div>
+        <div><b>MINI SOC</b><small>EDU / LAB 01</small></div>
+      </div>
+      <nav class="nav-list">
+        <a href="#/overview" data-route="overview"><span aria-hidden="true">⌁</span>Resumen</a>
+        <a href="#/incidents" data-route="incidents"><span aria-hidden="true">◆</span>Incidentes <em id="nav-incident-count">0</em></a>
+        <a href="#/logs" data-route="logs"><span aria-hidden="true">≡</span>Logs + KQL</a>
+        <a href="#/scenarios" data-route="scenarios"><span aria-hidden="true">◎</span>Escenarios</a>
+        <a href="#/playbooks" data-route="playbooks"><span aria-hidden="true">↳</span>Playbooks</a>
+        <a href="#/assistant" data-route="assistant"><span aria-hidden="true">✦</span>Copiloto IA</a>
+        <a href="#/learning" data-route="learning"><span aria-hidden="true">▤</span>Ruta de estudio</a>
+        <a href="#/about" data-route="about"><span aria-hidden="true">i</span>Acerca del lab</a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="lab-status"><i></i><span>Laboratorio local<br><small id="data-version">dataset v1.0.0</small></span></div>
+        <button class="ghost-button compact" id="reset-lab" type="button">Restablecer progreso</button>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <button class="menu-button" id="menu-button" aria-label="Abrir navegación" aria-expanded="false" type="button">☰</button>
+        <div class="breadcrumb" id="breadcrumb">Resumen operativo</div>
+        <div class="top-actions">
+          <button class="icon-button" id="help-button" type="button" title="Atajos de teclado" aria-label="Ver atajos de teclado">?</button>
+          <div class="clock"><span>TIEMPO DEL DATASET</span><b id="dataset-clock">—</b></div>
+        </div>
+      </header>
+      <main id="main" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="modal"><button class="modal-close" type="button" aria-label="Cerrar">×</button><div id="modal-content"></div></dialog>
+
+  <script src="src/data.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
