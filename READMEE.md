@@ -351,7 +351,7 @@ All data, identities, devices, alerts, incidents, and security events are fictio
 
 Cybersecurity and SOC Analyst response.
 
-- YOUR-PORTFOLIO-LINK
+- https://www.linkedin.com/in/eros-marin-0b7ba52b3/
 - [LinkedIn](https://www.linkedin.com/in/eros-marin-0b7ba52b3/)
 
 ## License
