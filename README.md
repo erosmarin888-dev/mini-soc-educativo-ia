@@ -11,13 +11,7 @@ The project provides an interactive SOC dashboard, simulated security telemetry,
 
 > **Important:** This project uses fictional and simulated cybersecurity data. It does not monitor a real network, connect to production systems, or replace a SIEM.
 
-## Live Demo
-
-[Open the Mini SOC Dashboard](YOUR-GITHUB-PAGES-LINK)
-
-## Project Preview
-
-![Mini SOC Dashboard](docs/assets/dashboard-overview.png)
+## project view
 
 ## Project Objectives
 
